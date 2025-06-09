@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+  overflow-x: hidden;
+  background-color: var(--color-gray-200)
+}
+
+.title-text {
+  @apply text-[45px] font-bold text-gray-700;
+}
+
+.text-normal {
+  @apply text-[12px] font-bold text-gray-500;
+}
