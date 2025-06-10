@@ -1,4 +1,4 @@
-import { User, Truck, Store, Sprout } from "lucide-react"; // Nome correto: "lucide-react"
+import { User, Truck, Store, Sprout } from "lucide-react";
 import { DefaultButton } from "../components/buttons/defaultButtonsComponent/defaultButton";
 
 export default function Cadastro() {
