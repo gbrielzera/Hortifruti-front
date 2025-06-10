@@ -1,9 +1,12 @@
 import React from "react";
 
 interface SearchInputProps {
-  placeholder: string;
+  placeholder?: string;
   type?: string; // permite passar 'text', 'password', etc.
   id?: string;
+  width?: string | number;  // Aceita string ("500px") ou number (500)
+  height?: string | number; // Aceita string ("75px") ou number (75)
+  className?: string;       // Classes adicionais
   
 }
 
