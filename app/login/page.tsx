@@ -1,36 +1,33 @@
 import { DefaultButton } from "@/app/components/buttons/defaultButtonsComponent/defaultButton";
-import LogoFormatadaInicial from "@/app/components/pages/LogoFormatadaInicial";
+import LogoFormatadaInicial from "@/app/components/itensPages/LogoFormatadaInicial";
 import Image from "next/image";
+import InputBar from "../components/inputs/textInput";
 
 export default function Home() {
   return (
     <div className="h-[100vh] m-0 p-0 border-0 outline-none overflow-hidden">
       <div className="m-10">
-      <LogoFormatadaInicial/>
       </div>
       <div className="flex flex-col  items-center ">
+              <LogoFormatadaInicial/>
         <div>
           <h1 className="title-text">Login </h1>
         </div>
         <div>
           <h2>Usuário/E-mail</h2>
           <form>
-            <input
+            <InputBar
               type="email"
-              name="email"
               id="email"
               placeholder="email@exemplo.com"
-              className="border-2 w-70"
             />
           </form>
           <h2>Senha</h2>
           <form>
-            <input
+            <InputBar
               type="password"
-              name="senha"
               id="senha"
               placeholder="senha..."
-              className="border-2 w-70"
             />
           </form>
           <div className="flex items-center">
