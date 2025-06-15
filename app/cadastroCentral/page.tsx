@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 // Importando apenas os ícones utilizados da biblioteca lucide-react
 import { User, Truck, Store, Sprout } from "lucide-react";
 // Importando o componente de botão estilizado
+=======
+import { User, Truck, Store, Sprout } from "lucide-react";
+>>>>>>> c33e3e64f47ff654e1cd8bbef83c5cc5dfdd665a
 import { DefaultButton } from "../components/buttons/defaultButtonsComponent/defaultButton";
 
 // Componente funcional principal da página de Cadastro

@@ -1,22 +1,37 @@
 import React from "react";
 
-interface SearchInputProps {
-  placeholder: string;
-  type?: string; // permite passar 'text', 'password', etc.
-  id?: string;
-  
+interface InputProps {
+  value?: string | number;
+  type?: "text" | "password" | "email" | "number" | "search" | "tel" | "url";
+  width?: string | number;
+  height?: string | number;
+  className?: string;
+  placeholder?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export default function InputBar({ placeholder, type , id= "text" }: SearchInputProps) {
-  return (
-    <div className="flex items-center border rounded-lg px-3 py-2 w-full bg-white shadow-sm">
-      <input
-        type={type}
-        placeholder={placeholder}
-        id={id}
+export default function InputBar({
+  value,
+  type = "text",
+  width = "100%",
+  height,
+  className = "",
+  placeholder,
+  onChange,
+}: InputProps) {
+  const style = {
+    width: typeof width === "number" ? `${width}px` : width,
+    height: typeof height === "number" ? `${height}px` : height,
+  };
 
-        className="outline-none focus:outline-none focus:ring-0 w-full text-sm text-gray-700 placeholder-gray-400"
-      />
-    </div>
+  return (
+    <input
+      type={type}
+      value={value}
+      placeholder={placeholder}
+      onChange={onChange}
+      className={`border rounded-md px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500 transition ${className}`}
+      style={style}
+    />
   );
 }
