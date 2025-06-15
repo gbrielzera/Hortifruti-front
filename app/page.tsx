@@ -1,5 +1,5 @@
 import { DefaultButton } from "@/app/components/buttons/defaultButtonsComponent/defaultButton";
-import LogoFormatadaInicial from "@/app/components/pages/LogoFormatadaInicial";
+import LogoFormatadaInicial from "@/app/components/itensPages/LogoFormatadaInicial";
 
 export default function Home() {
   return (
